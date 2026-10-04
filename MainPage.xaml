@@ -3,6 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CalculateurAge.MainPage"
              Title="Calculateur">
-    <VerticalStackLayout Padding="20" Spacing="12">
-    </VerticalStackLayout>
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+            <Label Text="Nom" FontSize="16"/>
+            <Entry x:Name="entryNom" Placeholder="Votre nom"/>
+            <Label Text="Date de naissance" FontSize="16"/>
+            <DatePicker x:Name="pickerDate"/>
+            <Button x:Name="btnCalculer" Text="Calculer"
+                    Clicked="OnCalculerClicked"/>
+            <Label x:Name="lblResultat" FontSize="20"
+                   IsVisible="False"/>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
