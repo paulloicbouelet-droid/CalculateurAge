@@ -12,9 +12,14 @@
             <DatePicker Date="{Binding DateNaissance}"/>
             <Button Text="Calculer"
                     Command="{Binding CalculerCommand}"/>
+            <Button Text="Effacer"
+                    Command="{Binding EffacerCommand}"/>
             <Label Text="{Binding Resultat}" FontSize="20"
-                   IsVisible="{Binding ResultatVisible}"
-                   />
+                   IsVisible="{Binding ResultatVisible}"/>
+            <Label Text="{Binding Message}" FontSize="18"
+                   IsVisible="{Binding ResultatVisible}"/>
+            <Label Text="{Binding JoursAnniversaire}" FontSize="16"
+                   IsVisible="{Binding ResultatVisible}"/>
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
